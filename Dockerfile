@@ -1,5 +1,5 @@
 # Use a lightweight Python base image
-FROM python:3.10-slim
+FROM python:3.10.6-slim
 
 # Prevent Python from writing .pyc files and enable unbuffered output
 ENV PYTHONDONTWRITEBYTECODE=1
