@@ -9,9 +9,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements and install Python dependencies
 COPY requirements.txt .
@@ -24,4 +22,5 @@ COPY . .
 EXPOSE 8000
 
 # Command to run your app (update this based on your framework)
-CMD ["python", "app.py"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+
