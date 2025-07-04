@@ -11,4 +11,4 @@ This is a Flask-based web application that allows users to try on virtual clothe
 - Automatic shoulder alignment using pose estimation.
 - Resizes and places garment image for realistic virtual try-on.
 
----
+https://github.com/user-attachments/assets/bd5725ac-e622-41fa-9c5c-e167ffbfc44a
